@@ -26,16 +26,20 @@
                             <div id="etatCoeurDateStatut"></div>
                         </div>
                         <hr class="my-4">
-                        Adresse du serveur (vide ou http://&lt;AdresseIPESP32&gt;) : 
+                        Adresse du serveur (vide ou http://&lt;AdresseIPESP32&gt;) :
                         <input type="text" id="URIAPI" class="form-control" placeholder="localhost">
                         <hr class="my-4">
                         <div class="mb-3">
-                            <button type="button" class="btn btn-success" onclick="activerCoeur()">Activer le
-                                coeur</button>
+                            <button type="button" class="btn btn-success" onclick="activerCoeur()">
+                                Activer le
+                                coeur
+                            </button>
                         </div>
                         <div class="mb-3">
-                            <button type="button" class="btn btn-danger" onclick="desactiverCoeur()">Désactiver le
-                                coeur</button>
+                            <button type="button" class="btn btn-danger" onclick="desactiverCoeur()">
+                                Désactiver le
+                                coeur
+                            </button>
                         </div>
                         <small class="text-muted">Site diffusé par votre ordinateur pour simuler l'ESP32.</small>
                     </div>
@@ -77,7 +81,7 @@
 
         function definirDessinEtat(etatCoeur) {
             document.getElementById('URICoeur').innerHTML = URIAPI();
-            document.getElementById('etatCoeurImg').innerHTML = (etatCoeur.etat == 'actif') ? '&#x2622; - Actif' : '&#x267b; - Repos' 
+            document.getElementById('etatCoeurImg').innerHTML = (etatCoeur.etat == 'actif') ? '&#x2622; - Actif' : '&#x267b; - Repos'
             document.getElementById('etatCoeurDateStatut').innerHTML = (new Date()).toTimeString();
         }
 
